@@ -34,8 +34,7 @@ const mongoose = require('mongoose');
         enum: ["Covid-19", "Heart Caring", "Orthopedic", "Obstetrics", "Lungs", "Pediatrics"]
       },
       time: {
-        type: Date,
-        required: true,
+        type: String,
       },
       status: {
         type: String,

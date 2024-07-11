@@ -136,7 +136,7 @@ const makeAppointment=async (req, res) =>{
         if (!/^\d{10}$/.test(phone)) {
             return res.status(401).json({ success: false, msg: "Invalid Phone Number" });
         }
-        const time = new Date(date).getTime();
+        const time = "NOT SPECIFIED";
         if(!name || !age || !gender || !description || !department || !time || !phone) return res.status(401).json({success: false, msg: "Incomplete Details"})
         const saveAppointment = await appointment.create({
             user: id, patient_name: name, age: age, gender: gender,

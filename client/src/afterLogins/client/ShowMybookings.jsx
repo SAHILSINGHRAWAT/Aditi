@@ -59,7 +59,7 @@ const ShowMyBookings = () => {
                 <p><strong>Gender:</strong> {appointment.gender}</p>
                 <p><strong>Description:</strong> {appointment.description}</p>
                 <p><strong>Department:</strong> {appointment.department}</p>
-                <p><strong>Time:</strong> {new Date(appointment.time).toLocaleString()}</p>
+                <p><strong>Time:</strong> {appointment.time}</p>
                 <p><strong>Status:</strong> {appointment.status}</p>
               </div>
               <div className={`status-bar ${appointment.status === 'accepted' ? 'bg-green-500' : appointment.status === 'canceled' ? 'bg-red-500' : 'bg-gray-500'} w-4 h-16 rounded-full`}></div>
