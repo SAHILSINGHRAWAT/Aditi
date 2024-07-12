@@ -117,9 +117,9 @@ function UserPage() {
   };
 
   const user = {
-    name: 'SAHIL SINGH RAWAT',
-    email: 'example@gmail.com',
-    bloodType: 'O-',
+    name: 'WELCOME USER ',
+    email: 'ADITI HOSPITAL',
+    bloodType: '      Malad West, Mumbai : Available Now',
     profilePicture: heroimg1
   };
 
@@ -141,7 +141,7 @@ function UserPage() {
           />
           <h2 className="text-xl font-semibold">{user.name}</h2>
           <p className="text-gray-600">{user.email}</p>
-          <p className="text-gray-600 mt-1">Blood Type: {user.bloodType}</p>
+          <p className="text-gray-600 mt-1"> {user.bloodType}</p>
         </div>
         <div className="mt-6 flex justify-between">
           <button
